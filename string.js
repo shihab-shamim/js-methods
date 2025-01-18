@@ -78,19 +78,27 @@ let str18 = "Hello, World!";
 // console.log(str18.search("World")); // 7
 // console.log(str18.includes("World")); // TRUE 
 
+// case insensative  vabe check kore na 
+
+
 let str19 = "The rain in Spain";
-// console.log(str19.match(/Spain/g)); // ['Spain']
+// console.log(str19.match(/spain/gi)); // ['Spain']
 
 
 // start ki diye hoiche seita check hoiche 
 let str20 = "JavaScript";
-console.log(str20.startsWith("Java")); // true
+// console.log(str20.startsWith("Java")); // true
 
 // ses ki diye hoiche seita check hoiche 
 
 let str21 = "JavaScript";
-console.log(str21.endsWith("Script")); // true
+// console.log(str21.endsWith("Script")); // true
 
 
 
 
+let str22 = "test1 test2 test3 test4 test10";
+let matches = str22.matchAll(/test(\d)/gi);
+for (const match of matches) {
+  console.log(match);
+}
